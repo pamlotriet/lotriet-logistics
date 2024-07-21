@@ -1,0 +1,30 @@
+<div class="flex flex-col md:flex-row w-screen h-screen bg-black overflow-auto">
+    <!-- Canvas Container -->
+    <div id="canvas" class="relative flex-grow flex items-center justify-center w-full h-full md:w-[65%] md:ml-[-35%]">
+        <canvas id="canvas-box" class="w-full h-full"></canvas>
+    </div>
+
+    <!-- Side Content -->
+    <div
+        class="flex-shrink-0 flex-auto w-full md:w-[35%] flex flex-col items-center justify-center p-6 md:p-12 lg:p-24 bg-black lg:mr-24 overflow-hidden">
+        <div class="flex flex-col w-full">
+            <h1 class="text-gold p-2 pb-0 text-xl md:text-2xl lg:text-3xl">
+                {{ 'home.heading' | translate }}
+            </h1>
+            <h3 class="text-black p-2 pt-0 text-lg md:text-xl lg:text-2xl">
+                {{ 'home.subheading' | translate }}
+            </h3>
+            <p class="p-2 text-justify text-sm md:text-base lg:text-lg">
+                {{ 'home.introduction' | translate }}
+            </p>
+            <div class="flex flex-row-reverse w-full items-center gap-4 md:gap-6 mt-4">
+                <app-button
+                    class="bg-gold flex cursor-pointer shadow-xl items-center justify-center text-white font-montserrat font-bold rounded-xl p-2 w-24 md:w-32"
+                    [buttonText]="'home.buttonText.about' | translate"></app-button>
+                <app-button
+                    class="bg-gold flex cursor-pointer shadow-xl items-center justify-center text-white font-montserrat font-bold rounded-xl p-2 w-24 md:w-32"
+                    [buttonText]="'home.buttonText.contact' | translate"></app-button>
+            </div>
+        </div>
+    </div>
+</div>

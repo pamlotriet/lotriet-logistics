@@ -1,0 +1,43 @@
+@import "primeicons/primeicons.css";
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply overflow-hidden;
+    }
+
+    h1 {
+        @apply font-montserrat;
+        @apply font-bold;
+        @apply text-3xl;
+    }
+
+    h2 {
+        @apply font-montserrat;
+        @apply font-bold;
+        @apply pt-4 pl-0;
+    }
+
+    h3 {
+        @apply font-montserrat;
+        @apply text-sm;
+    }
+
+    a {
+        @apply font-montserrat;
+        @apply text-sm;
+    }
+
+    p {
+        @apply font-montserrat;
+        @apply text-sm;
+        @apply text-white
+    }
+}
+
+@layer components {}

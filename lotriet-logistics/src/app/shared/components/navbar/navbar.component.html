@@ -1,0 +1,59 @@
+<div class="w-full h-16 top-0 flex items-center p-2.5 z-30 sticky bg-black shadow-custom-blue">
+    <div class="ml-4 flex flex-row w-full">
+        <div class="grid grid-cols-2 w-full">
+            <!-- Logo Section -->
+            <div class="col-span-1 flex items-center">
+                <img routerLink="/" src="assets/images/logo.svg" alt="Logo" class="h-8 mr-8 hover:cursor-pointer" />
+            </div>
+
+            <!-- Navbar for larger screens -->
+            <div class="col-span-1 hidden md:flex flex-row-reverse">
+                <nav class="navbar ml-auto mr-4">
+                    <ul class="flex flex-row space-x-4">
+                        <li class="flex items-center">
+                            <div class="flex items-center space-x-2 hover:bg-gray-800 rounded-lg p-2 cursor-pointer"
+                                [routerLinkActive]="['activeHome']" [routerLinkActiveOptions]="{exact: true}">
+                                <i class="pi pi-home text-gold"></i>
+                                <a routerLink="/" class="text-gold">
+                                    {{ 'navbar.home' | translate }}
+                                </a>
+                            </div>
+                        </li>
+                        <li class="flex items-center">
+                            <div class="flex items-center space-x-2 hover:bg-gray-800 rounded-lg p-2 cursor-pointer"
+                                [routerLinkActive]="['activeHome']">
+                                <i class="pi pi-warehouse text-gold"></i>
+                                <a routerLink="/about" class="text-gold">
+                                    {{ 'navbar.about' | translate }}
+                                </a>
+                            </div>
+                        </li>
+                        <li class="flex items-center">
+                            <div class="flex items-center space-x-2 hover:bg-gray-800 rounded-lg p-2 cursor-pointer"
+                                [routerLinkActive]="['activeHome']">
+                                <i class="pi pi-wrench text-gold"></i>
+                                <a routerLink="/services" class="text-gold">
+                                    {{ 'navbar.services' | translate }}
+                                </a>
+                            </div>
+                        </li>
+                        <li class="flex items-center">
+                            <div class="flex items-center space-x-2 hover:bg-gray-800 rounded-lg p-2 cursor-pointer"
+                                [routerLinkActive]="['activeHome']">
+                                <i class="pi pi-phone text-gold"></i>
+                                <a routerLink="/contact" class="text-gold">
+                                    {{ 'navbar.contact' | translate }}
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- Sidebar for smaller screens -->
+            <div class="col-span-1 flex flex-row-reverse md:hidden items-center">
+                <app-side-bar></app-side-bar>
+            </div>
+        </div>
+    </div>
+</div>

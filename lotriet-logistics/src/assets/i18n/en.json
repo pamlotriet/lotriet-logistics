@@ -1,0 +1,17 @@
+{
+    "navbar":{
+        "home": "Home",
+        "about": "About",
+        "services":"Services",
+        "contact":"Contact"
+    },
+    "home":{
+        "heading":"Welcome to Lotriet Logistics",
+        "subheading":"Your Trusted Fleet Brokerage Partner",
+        "introduction":"We offer comprehensive fleet brokerage services, including sourcing, negotiating, and managing fleet transactions to save you time and resources. Our team of experienced professionals is dedicated to finding the perfect match for your specific requirements. Understanding that each client’s needs are unique, we provide tailored solutions that cater to your business objectives. Whether you need a single vehicle or an entire fleet, we have the resources and flexibility to deliver precisely what you need. With years of experience in the fleet brokerage industry, we have the knowledge and connections to provide you with unparalleled service. Our commitment to excellence and customer satisfaction sets us apart in a competitive market.",
+        "buttonText":{
+            "about": "About Us",
+            "contact":"Contact Us"
+        }
+    }
+}

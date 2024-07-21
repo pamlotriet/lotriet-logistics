@@ -1,0 +1,35 @@
+<p-sidebar class="w-fit" [(visible)]="sidebarVisible" position="right" baseZIndex="-1" [style]="{
+    'background-color': 'black',
+    'width': 'fit-content',
+    'box-shadow': '4px 4px 8px rgba(1, 36, 109, 0.5)',
+    'color':'#A58E34',
+    'font-weight':'600'
+  }">
+    <h2 class="mb-4">Lotriet Logistics</h2>
+    <nav class="navbar ml-auto mr-4">
+        <ul class="flex flex-col">
+            <li class=" ml-0 p-2 flex  items-center flex-row" routerLinkActive="activeHome"
+                [routerLinkActiveOptions]="{exact: true}">
+                <i class="pi pi-home "></i>
+                <a routerLink="/" [class.activeHome]="!isOtherLinkActive()" class="no-underline  ml-4">{{'navbar.home' |
+                    translate}} </a>
+            </li>
+            <li class=" ml-0 p-2 flex items-center flex-row" routerLinkActive="activeHome">
+                <i class="pi pi-warehouse"></i>
+                <a routerLink="/about" class="no-underline ml-4">{{'navbar.about' |
+                    translate}}</a>
+            </li>
+            <li class=" ml-0 p-2 flex  items-center flex-row" routerLinkActive="activeHome">
+                <i class="pi 
+                pi-wrench"></i>
+                <a routerLink="/services" class="no-underline  ml-4">{{'navbar.services'
+                    | translate}}</a>
+            </li>
+            <li class=" ml-0 p-2 flex  items-center flex-row" routerLinkActive="activeHome">
+                <i class="pi pi-phone"></i>
+                <a routerLink="/contact" class="no-underline  ml-4">{{'navbar.contact' | translate}}</a>
+            </li>
+        </ul>
+    </nav>
+</p-sidebar>
+<p-button (click)="toggleSideBar()" icon="pi pi-bars text-gold" />
