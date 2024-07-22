@@ -14,7 +14,6 @@
     h1 {
         @apply font-montserrat;
         @apply font-bold;
-        @apply text-3xl;
     }
 
     h2 {
@@ -25,7 +24,7 @@
 
     h3 {
         @apply font-montserrat;
-        @apply text-sm;
+        @apply text-white
     }
 
     a {
@@ -35,9 +34,6 @@
 
     p {
         @apply font-montserrat;
-        @apply text-sm;
         @apply text-white
     }
 }
-
-@layer components {}

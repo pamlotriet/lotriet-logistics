@@ -102,7 +102,7 @@ export class HomePageComponent implements AfterViewInit {
 
   // Update renderer size based on container size
   private updateRendererSize(renderer: THREE.WebGLRenderer) {
-    const container = document.querySelector('#canvas') as HTMLDivElement;
+    const container = document.querySelector('#canvas-container') as HTMLDivElement;
 
     if (container) {
       // Get the dimensions of the container element
