@@ -18,10 +18,10 @@
             <div class="flex flex-row-reverse w-full items-center gap-4 md:gap-6 mt-4 p-4">
                 <app-button
                     class="bg-gold flex cursor-pointer shadow-xl items-center justify-center text-white font-montserrat font-bold rounded-xl p-2 md:w-32"
-                    [buttonText]="'home.buttonText.about' | translate"></app-button>
+                    [buttonText]="'home.buttonText.about' | translate" (click)="navigateToAbout()"></app-button>
                 <app-button
                     class="bg-gold flex cursor-pointer shadow-xl items-center justify-center text-white font-montserrat font-bold rounded-xl p-2 md:w-32"
-                    [buttonText]="'home.buttonText.contact' | translate"></app-button>
+                    [buttonText]="'home.buttonText.contact' | translate" (click)="navigateToContact()"></app-button>
             </div>
         </div>
     </div>

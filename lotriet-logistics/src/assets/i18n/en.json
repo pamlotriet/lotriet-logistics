@@ -13,5 +13,23 @@
             "about": "About Us",
             "contact":"Contact Us"
         }
+    },
+    "about":{
+        "imgAlt":"Image Unavailable",
+        "heading":"Who We Are",
+        "subheading":"Tailored Solutions for Seamless Fleet Management",
+        "infoTextOne":"At Lotriet Logistics, we specialize in customized fleet management solutions that enhance efficiency and cut costs. Our team works closely with clients to tailor services that optimize routes, improve vehicle use, and ensure compliance, all while leveraging cutting-edge technology.",
+        "infoTextTwo":"We are committed to delivering scalable, high-quality solutions and have built a reputation for reliability across various industries. Our goal is to be a trusted partner, driving growth and success for your business through innovative fleet management.",
+        "values":{
+            "misionHeading":"Mission",
+            "mision":"At Lotriet Logistics, our mission is to deliver innovative and reliable fleet solutions that empower businesses to streamline their logistics operations and achieve their goals.",
+            "visionHeading":"Vision",
+            "vision":"Our vision is to be the leading provider of cutting-edge fleet management services, known for our dedication to excellence, innovation, and customer-centric approach.",
+            "valuesHeading":"Values",
+            "values":"We uphold the highest standards of integrity, prioritize our clients’ success with tailored services, continuously seek innovative solutions, and ensure consistent reliability in all our operations."
+        }
+    },
+    "services":{
+        "heading":"Our Services"
     }
 }

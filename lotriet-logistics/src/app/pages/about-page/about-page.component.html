@@ -1,1 +1,58 @@
-<p>about-page works!</p>
+<div class="grid grid-cols-2 bg-black h-screen w-screen mt-8">
+    <div class="flex col-span-1 flex-col">
+        <div class="flex  mt-2 md:ml-[-30%] animate-drive-in-1">
+            <img src="assets/images/truck-small.svg" [alt]="'about.imgAlt'|translate">
+        </div>
+        <div class="flex  h-full md:ml-[-25%] mt-2 animate-drive-in-2">
+            <img src="assets/images/truck-medium.svg" [alt]="'about.imgAlt'|translate">
+        </div>
+        <div class="flex  h-full md:ml-[-25%] mt-2 animate-drive-in-3">
+            <img src="assets/images/truck-large.svg" [alt]="'about.imgAlt'|translate">
+        </div>
+    </div>
+    <div class="flex col-span-1 flex-col p-16 pl-12 animate-float-in">
+        <h1 class="text-gold p-2 pb-0 text-base md:text-2xl lg:text-3xl"> {{'about.heading' | translate}}</h1>
+        <h3 class=" p-2 pt-0 text-xs">
+            {{ 'about.subheading' | translate }}
+        </h3>
+        <p class="p-2 text-left md:text-justify lg:text-justify ">
+            {{ 'about.infoTextOne' | translate }}
+        </p>
+        <p class="p-2 text-left md:text-justify lg:text-justify ">
+            {{ 'about.infoTextTwo' | translate }}
+        </p>
+    </div>
+
+    <div class="flex col-span-2 flex-row p-12 justify-center mt-6 mb-6">
+        <div class="flex flex-grow justify-end items-center">
+            <i class="pi pi-truck text-gold transform scale-x-[-1]"></i>
+            <hr class="border-2 border-gold w-4/12">
+        </div>
+        <div class="flex flex-grow justify-start items-center mx-8">
+            <hr class="border-2 border-gold w-4/12">
+            <i class="pi pi-truck text-gold"></i>
+        </div>
+    </div>
+
+    <div class="flex col-span-2 flex-row p-12 justify-center mt-6 mb-6 mr-32 ml-32 gap-40">
+        <div class="flex flex-col bg-black shadow-card-primary justify-center items-center h-96 w-96">
+            <i class="pi pi-cog text-white text-6xl"></i>
+            <h2 class="text-white text-lg pb-4">{{'about.values.misionHeading'| translate}}</h2>
+            <hr class="border-1 border-gold w-8/12 p-2">
+            <p class="p-2 text-center text-sm pt-4">{{'about.values.mision'| translate}}</p>
+        </div>
+        <div class="flex flex-col bg-black shadow-card-primary justify-center items-center h-96 w-96">
+            <i class="pi pi-lightbulb text-white text-6xl"></i>
+            <h2 class="text-white text-lg pb-4">{{'about.values.visionHeading'| translate}}</h2>
+            <hr class="border-1 border-gold w-8/12 p-2">
+            <p class="p-2 text-center text-sm pt-4">{{'about.values.vision'| translate}}</p>
+        </div>
+        <div class="flex flex-col bg-black shadow-card-primary justify-center items-center h-96 w-96">
+            <i class="pi pi-shield text-white text-6xl"></i>
+            <h2 class="text-white text-lg pb-4">{{'about.values.valuesHeading'| translate}}</h2>
+            <hr class="border-1 border-gold w-8/12">
+            <p class="p-2 text-center text-sm pt-4">{{'about.values.values'| translate}}</p>
+        </div>
+    </div>
+
+</div>

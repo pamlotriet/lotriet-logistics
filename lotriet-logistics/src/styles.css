@@ -8,7 +8,9 @@
 
 @layer base {
     body {
-        @apply overflow-hidden;
+        @apply overflow-x-hidden;
+        @apply overflow-y-auto;
+        @apply bg-black
     }
 
     h1 {

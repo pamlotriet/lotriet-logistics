@@ -1,10 +1,11 @@
-import { Component, AfterViewInit } from '@angular/core';
+import { Component, AfterViewInit, inject } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { ButtonComponent } from '../../shared/components/button/button.component';
 import { CommonModule, NgOptimizedImage } from '@angular/common';
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 import { GLTF } from 'three/examples/jsm/loaders/GLTFLoader';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home-page',
@@ -15,7 +16,7 @@ import { GLTF } from 'three/examples/jsm/loaders/GLTFLoader';
 })
 export class HomePageComponent implements AfterViewInit {
   private model: THREE.Object3D | undefined; // Store the loaded model
-
+  private router = inject(Router);
   ngAfterViewInit(): void {
     // Create the scene after view initialization
     this.createThreeJsScene();
@@ -121,5 +122,13 @@ export class HomePageComponent implements AfterViewInit {
       const scaleFactor = isMobile ? 3 : 7; // Scale for mobile vs larger screens
       this.model.scale.set(scaleFactor, scaleFactor, scaleFactor);
     }
+  }
+
+  navigateToContact() {
+    this.router.navigateByUrl('/contact');
+  }
+
+  navigateToAbout() {
+    this.router.navigateByUrl('/about');
   }
 }
