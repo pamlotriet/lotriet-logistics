@@ -6,8 +6,8 @@ import { TranslateModule } from '@ngx-translate/core';
   standalone: true,
   imports: [TranslateModule],
   templateUrl: './about-page.component.html',
-  styleUrl: './about-page.component.css'
+  styleUrls: ['./about-page.component.css'], // Use `styleUrls` instead of `styleUrl`
 })
 export class AboutPageComponent {
-
+  // Component logic goes here
 }

@@ -15,6 +15,7 @@ export const appConfig: ApplicationConfig = {
     provideClientHydration(),
     provideHttpClient(withInterceptorsFromDi()),
     importProvidersFrom(
+      TranslateModule,
       BrowserAnimationsModule,
       HttpClient,
       TranslateModule.forRoot({
