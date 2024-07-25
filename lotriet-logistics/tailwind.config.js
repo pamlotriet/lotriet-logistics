@@ -12,7 +12,7 @@ module.exports = {
     extend: {
       boxShadow: {
         'white-glow': '0 0 10px 2px rgba(255, 255, 255, 0.75)',
-        'custom-blue': '0px 4px 8px rgba(1, 36, 109, 0.5)', 
+        'shadow-gold': '0px 2px 8px rgba(165, 142, 52, 0.5)',
         'card-primary': '0 6px 20px rgba(165, 142, 52, 0.7)', 
         'card-secondary': '0 15px 30px rgba(0, 0, 0, 0.2)',
       },

@@ -30,6 +30,28 @@
         }
     },
     "services":{
-        "heading":"Our Services"
+        "heading":"Our Services",
+        "serviceOptions": [
+            {
+                "name":"Fleet Management Solutions",
+                "description":"Comprehensive management of your fleet, including route optimization and maintenance scheduling to ensure minimal downtime and enhanced operational efficiency.",
+                "icon":"pi pi-cog"
+            },
+            {
+                "name":"Logistics and Distribution Services",
+                "description":"Offering secure warehousing, efficient cross-docking, and last-mile delivery services to ensure timely and secure delivery of your products.",
+                "icon":"pi pi-box"
+            },
+            {
+                "name":"Bulk Load Transport",
+                "description":"Specializing in the transport of heavy and bulk cargo with specialized equipment, ensuring flexible scheduling and adherence to safety regulations.",
+                "icon":"pi pi-truck"
+            },
+            {
+                "name":"Linehaul Transport",
+                "description":"Providing long-distance freight transport with high-capacity vehicles, optimizing routes for cost-effective and reliable delivery.",
+                "icon":"pi pi-directions"
+            }
+        ]
     }
 }

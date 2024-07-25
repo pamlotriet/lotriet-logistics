@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
-import { TranslateModule } from '@ngx-translate/core';
+import { Component, inject } from '@angular/core';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { toSignal } from '@angular/core/rxjs-interop';
 
 @Component({
   selector: 'app-services-pages',
@@ -8,4 +9,7 @@ import { TranslateModule } from '@ngx-translate/core';
   templateUrl: './services-pages.component.html',
   styleUrl: './services-pages.component.css',
 })
-export class ServicesPagesComponent {}
+export class ServicesPagesComponent {
+  translate = inject(TranslateService);
+  services = toSignal(this.translate.get('services.serviceOptions'));
+}
