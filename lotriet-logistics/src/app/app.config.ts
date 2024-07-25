@@ -12,7 +12,6 @@ export const appConfig: ApplicationConfig = {
   providers: [
     provideZoneChangeDetection({ eventCoalescing: true }),
     provideRouter(routes),
-    provideClientHydration(),
     provideHttpClient(withInterceptorsFromDi()),
     importProvidersFrom(
       TranslateModule,
@@ -26,7 +25,7 @@ export const appConfig: ApplicationConfig = {
           deps: [HttpClient],
         },
       }),
-    ),
+    ), provideClientHydration(),
   ],
 };
 
