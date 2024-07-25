@@ -1,6 +1,5 @@
 import { ApplicationConfig, importProvidersFrom, provideZoneChangeDetection } from '@angular/core';
 import { provideRouter } from '@angular/router';
-
 import { routes } from './app.routes';
 import { HttpClient, provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
@@ -25,7 +24,8 @@ export const appConfig: ApplicationConfig = {
           deps: [HttpClient],
         },
       }),
-    ), provideClientHydration(),
+    ),
+    provideClientHydration(),
   ],
 };
 

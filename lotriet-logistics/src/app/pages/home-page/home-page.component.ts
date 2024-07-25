@@ -3,8 +3,8 @@ import { TranslateModule } from '@ngx-translate/core';
 import { ButtonComponent } from '../../shared/components/button/button.component';
 import { CommonModule, NgOptimizedImage } from '@angular/common';
 import * as THREE from 'three';
-import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
-import { GLTF } from 'three/examples/jsm/loaders/GLTFLoader';
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
+import { GLTF } from 'three/examples/jsm/loaders/GLTFLoader.js';
 import { Router } from '@angular/router';
 
 @Component({
