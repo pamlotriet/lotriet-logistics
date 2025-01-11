@@ -1,5 +1,6 @@
 # Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+
+Developed a responsive and modern website for Lotriet Logistics to enhance their online presence and effectively showcase their services. The project involved creating a user-friendly interface with intuitive navigation, ensuring seamless performance across devices and browsers. By collaborating closely with stakeholders, I aligned the website's design and functionality with the company’s business goals, delivering a professional digital platform that reflects their commitment to quality and excellence in logistics.
 
 # Getting Started
 TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
